@@ -1,24 +1,660 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24123.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24062"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backround.png" translatesAutoresizingMaskIntoConstraints="NO" id="xYJ-6c-nVi">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xYJ-6c-nVi" secondAttribute="height" multiplier="1:1" id="wPk-AY-4mo"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYC-Gc-iqg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-OP-o6q">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-be-Ubf">
+                                                <rect key="frame" x="28" y="8" width="131.5" height="131.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aqh-be-Ubf" secondAttribute="height" multiplier="1:1" id="H29-S0-7gn"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="1.0.png"/>
+                                                <connections>
+                                                    <segue destination="1Mp-JG-GXq" kind="showDetail" id="TX8-Kg-GeC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lechuza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="NgK-nE-P3p">
+                                                <rect key="frame" x="28" y="156.5" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NgK-nE-P3p" firstAttribute="leading" secondItem="aqh-be-Ubf" secondAttribute="leading" id="2LC-zH-AKo"/>
+                                            <constraint firstAttribute="bottom" secondItem="NgK-nE-P3p" secondAttribute="bottom" constant="10" id="4cw-zA-FLD"/>
+                                            <constraint firstItem="aqh-be-Ubf" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" multiplier="0.7" id="CrG-Pg-Q1T"/>
+                                            <constraint firstItem="NgK-nE-P3p" firstAttribute="trailing" secondItem="aqh-be-Ubf" secondAttribute="trailing" id="bGz-Kf-QZS"/>
+                                            <constraint firstItem="aqh-be-Ubf" firstAttribute="centerX" secondItem="4Ai-OP-o6q" secondAttribute="centerX" id="lms-hk-Rxg"/>
+                                            <constraint firstItem="aqh-be-Ubf" firstAttribute="centerY" secondItem="4Ai-OP-o6q" secondAttribute="centerY" constant="-20" id="uxF-su-awS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjF-K3-PTa">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-jB-KFu">
+                                                <rect key="frame" x="28" y="8" width="131.5" height="131.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XL6-jB-KFu" secondAttribute="height" multiplier="1:1" id="mn1-tk-hmR"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="2.0.png"/>
+                                                <connections>
+                                                    <segue destination="xji-nb-91W" kind="showDetail" id="vOl-q6-Gps"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="1v0-2h-ooL">
+                                                <rect key="frame" x="28" y="156.5" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1v0-2h-ooL" firstAttribute="trailing" secondItem="XL6-jB-KFu" secondAttribute="trailing" id="HUj-nT-gjR"/>
+                                            <constraint firstItem="1v0-2h-ooL" firstAttribute="leading" secondItem="XL6-jB-KFu" secondAttribute="leading" id="aIJ-xc-6Hc"/>
+                                            <constraint firstAttribute="bottom" secondItem="1v0-2h-ooL" secondAttribute="bottom" constant="10" id="cqN-AN-C8M"/>
+                                            <constraint firstItem="XL6-jB-KFu" firstAttribute="centerX" secondItem="rjF-K3-PTa" secondAttribute="centerX" id="jJ8-Db-pnP"/>
+                                            <constraint firstItem="XL6-jB-KFu" firstAttribute="width" secondItem="rjF-K3-PTa" secondAttribute="width" multiplier="0.7" id="kjV-Qb-MRx"/>
+                                            <constraint firstItem="XL6-jB-KFu" firstAttribute="centerY" secondItem="rjF-K3-PTa" secondAttribute="centerY" constant="-20" id="kkR-PE-z8K"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-8F-oQw">
+                                        <rect key="frame" x="0.0" y="187.5" width="187.5" height="188"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2W-ZJ-YsU">
+                                                <rect key="frame" x="28" y="8.5" width="131.5" height="131"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="P2W-ZJ-YsU" secondAttribute="height" multiplier="1:1" id="BiV-KI-Ayd"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="3.0.png"/>
+                                                <connections>
+                                                    <segue destination="6Pm-Va-IbC" kind="showDetail" id="C3w-Re-16W"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-Q3-gDr">
+                                                <rect key="frame" x="28" y="157" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="P2W-ZJ-YsU" firstAttribute="width" secondItem="zEb-8F-oQw" secondAttribute="width" multiplier="0.7" id="94F-1L-Eo9"/>
+                                            <constraint firstItem="P2W-ZJ-YsU" firstAttribute="centerX" secondItem="zEb-8F-oQw" secondAttribute="centerX" id="FdE-HX-fYC"/>
+                                            <constraint firstItem="qfY-Q3-gDr" firstAttribute="leading" secondItem="P2W-ZJ-YsU" secondAttribute="leading" id="bZy-4l-iSO"/>
+                                            <constraint firstItem="qfY-Q3-gDr" firstAttribute="trailing" secondItem="P2W-ZJ-YsU" secondAttribute="trailing" id="gdv-1e-WNp"/>
+                                            <constraint firstItem="P2W-ZJ-YsU" firstAttribute="centerY" secondItem="zEb-8F-oQw" secondAttribute="centerY" constant="-20" id="jpY-gL-5Nq"/>
+                                            <constraint firstAttribute="bottom" secondItem="qfY-Q3-gDr" secondAttribute="bottom" constant="10" id="rr3-A8-rV0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42J-l8-s6S">
+                                        <rect key="frame" x="187.5" y="187.5" width="187.5" height="187.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-xF-Me6">
+                                                <rect key="frame" x="28" y="8" width="131.5" height="131.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="p7Q-xF-Me6" secondAttribute="height" multiplier="1:1" id="Tb8-RI-DcM"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="4.0.png"/>
+                                                <connections>
+                                                    <segue destination="Zxx-Jo-LcX" kind="showDetail" id="HdI-0x-kID"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cuervo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DzY-Jp-gSn">
+                                                <rect key="frame" x="28" y="156.5" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="p7Q-xF-Me6" firstAttribute="width" secondItem="42J-l8-s6S" secondAttribute="width" multiplier="0.7" id="59c-CR-bIO"/>
+                                            <constraint firstItem="p7Q-xF-Me6" firstAttribute="centerX" secondItem="42J-l8-s6S" secondAttribute="centerX" id="RLE-u0-9Cs"/>
+                                            <constraint firstAttribute="bottom" secondItem="DzY-Jp-gSn" secondAttribute="bottom" constant="10" id="RME-Eu-a6c"/>
+                                            <constraint firstItem="p7Q-xF-Me6" firstAttribute="centerY" secondItem="42J-l8-s6S" secondAttribute="centerY" constant="-20" id="YIk-59-vMq"/>
+                                            <constraint firstItem="DzY-Jp-gSn" firstAttribute="leading" secondItem="p7Q-xF-Me6" secondAttribute="leading" id="csA-8d-hUq"/>
+                                            <constraint firstItem="DzY-Jp-gSn" firstAttribute="trailing" secondItem="p7Q-xF-Me6" secondAttribute="trailing" id="sOU-NA-N2c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-8m-iKd">
+                                        <rect key="frame" x="0.0" y="375.5" width="187.5" height="187"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5Y-b2-ZyG">
+                                                <rect key="frame" x="28" y="7.5" width="131.5" height="131.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="F5Y-b2-ZyG" secondAttribute="height" multiplier="1:1" id="bHw-yD-h51"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="5.0.png"/>
+                                                <connections>
+                                                    <segue destination="Iww-l2-ohu" kind="showDetail" id="5Aj-qH-KdJ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zopilote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="9sw-DZ-Ovj">
+                                                <rect key="frame" x="28" y="156" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9sw-DZ-Ovj" firstAttribute="trailing" secondItem="F5Y-b2-ZyG" secondAttribute="trailing" id="9ae-Tn-zZe"/>
+                                            <constraint firstItem="F5Y-b2-ZyG" firstAttribute="centerX" secondItem="e6h-8m-iKd" secondAttribute="centerX" id="PID-0l-d5M"/>
+                                            <constraint firstItem="F5Y-b2-ZyG" firstAttribute="centerY" secondItem="e6h-8m-iKd" secondAttribute="centerY" constant="-20" id="Xbk-lH-6IO"/>
+                                            <constraint firstItem="9sw-DZ-Ovj" firstAttribute="leading" secondItem="F5Y-b2-ZyG" secondAttribute="leading" id="jsg-qW-hYB"/>
+                                            <constraint firstAttribute="bottom" secondItem="9sw-DZ-Ovj" secondAttribute="bottom" constant="10" id="sE6-Ao-0yK"/>
+                                            <constraint firstItem="F5Y-b2-ZyG" firstAttribute="width" secondItem="e6h-8m-iKd" secondAttribute="width" multiplier="0.7" id="w40-3e-ZLV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RON-5w-5Ek">
+                                        <rect key="frame" x="187.5" y="375" width="187.5" height="187"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-DD-hBG">
+                                                <rect key="frame" x="28" y="8" width="131.5" height="131"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nNi-DD-hBG" secondAttribute="height" multiplier="1:1" id="1XI-V3-zF0"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="6.0.png"/>
+                                                <connections>
+                                                    <segue destination="CT4-x6-ccN" kind="showDetail" id="okX-gP-9tu"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loro gris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-Qh-F2q">
+                                                <rect key="frame" x="28" y="156" width="131.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cJM-Qh-F2q" firstAttribute="trailing" secondItem="nNi-DD-hBG" secondAttribute="trailing" id="0PP-d2-dW8"/>
+                                            <constraint firstAttribute="bottom" secondItem="cJM-Qh-F2q" secondAttribute="bottom" constant="10" id="A0n-zf-ZPg"/>
+                                            <constraint firstItem="cJM-Qh-F2q" firstAttribute="leading" secondItem="nNi-DD-hBG" secondAttribute="leading" id="A4b-wr-0P3"/>
+                                            <constraint firstItem="nNi-DD-hBG" firstAttribute="centerY" secondItem="RON-5w-5Ek" secondAttribute="centerY" constant="-20" id="ECY-nx-kvC"/>
+                                            <constraint firstItem="nNi-DD-hBG" firstAttribute="centerX" secondItem="RON-5w-5Ek" secondAttribute="centerX" id="KyE-Cr-LvU"/>
+                                            <constraint firstItem="nNi-DD-hBG" firstAttribute="width" secondItem="RON-5w-5Ek" secondAttribute="width" multiplier="0.7" id="Yjh-nS-Cef"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGK-1y-6Ty">
+                                        <rect key="frame" x="0.0" y="562.5" width="375" height="84.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-0s-X3P">
+                                                <rect key="frame" x="131.5" y="27.5" width="112.5" height="29.5"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Creditos">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="IQV-ct-bbQ" kind="showDetail" id="oQZ-iD-wVF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0Mw-0s-X3P" firstAttribute="centerY" secondItem="JGK-1y-6Ty" secondAttribute="centerY" id="COi-RV-Xtl"/>
+                                            <constraint firstItem="0Mw-0s-X3P" firstAttribute="width" secondItem="JGK-1y-6Ty" secondAttribute="width" multiplier="0.3" id="K72-Ua-ywp"/>
+                                            <constraint firstItem="0Mw-0s-X3P" firstAttribute="height" secondItem="JGK-1y-6Ty" secondAttribute="height" multiplier="0.35" id="QLv-XF-qXX"/>
+                                            <constraint firstItem="0Mw-0s-X3P" firstAttribute="centerX" secondItem="JGK-1y-6Ty" secondAttribute="centerX" id="tQk-RS-0T1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="e6h-8m-iKd" firstAttribute="top" secondItem="zEb-8F-oQw" secondAttribute="bottom" id="1Bl-FC-rkv"/>
+                                    <constraint firstItem="42J-l8-s6S" firstAttribute="top" secondItem="4Ai-OP-o6q" secondAttribute="bottom" id="AvZ-rz-cGC"/>
+                                    <constraint firstItem="4Ai-OP-o6q" firstAttribute="top" secondItem="GYC-Gc-iqg" secondAttribute="top" id="BL8-0B-dcS"/>
+                                    <constraint firstItem="e6h-8m-iKd" firstAttribute="height" secondItem="4Ai-OP-o6q" secondAttribute="height" multiplier="0.996992" id="ByF-IC-q6p"/>
+                                    <constraint firstItem="rjF-K3-PTa" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" id="EQg-rK-N9m"/>
+                                    <constraint firstItem="rjF-K3-PTa" firstAttribute="top" secondItem="GYC-Gc-iqg" secondAttribute="top" id="Eg4-G9-vvf"/>
+                                    <constraint firstItem="4Ai-OP-o6q" firstAttribute="height" secondItem="GYC-Gc-iqg" secondAttribute="height" multiplier="0.29" id="Gf9-8s-Z2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="rjF-K3-PTa" secondAttribute="trailing" id="Gr7-VF-MTA"/>
+                                    <constraint firstAttribute="trailing" secondItem="RON-5w-5Ek" secondAttribute="trailing" id="H5w-CH-74d"/>
+                                    <constraint firstItem="zEb-8F-oQw" firstAttribute="leading" secondItem="GYC-Gc-iqg" secondAttribute="leading" id="HAA-iP-zkv"/>
+                                    <constraint firstItem="42J-l8-s6S" firstAttribute="height" secondItem="4Ai-OP-o6q" secondAttribute="height" multiplier="0.998496" id="IU1-MT-HRM"/>
+                                    <constraint firstItem="4Ai-OP-o6q" firstAttribute="width" secondItem="GYC-Gc-iqg" secondAttribute="width" multiplier="0.5" id="Iyw-Yd-tkf"/>
+                                    <constraint firstItem="e6h-8m-iKd" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" id="Khd-Ca-ljv"/>
+                                    <constraint firstItem="JGK-1y-6Ty" firstAttribute="leading" secondItem="GYC-Gc-iqg" secondAttribute="leading" id="LXI-jQ-MDt"/>
+                                    <constraint firstItem="zEb-8F-oQw" firstAttribute="height" secondItem="4Ai-OP-o6q" secondAttribute="height" id="Ln9-ax-zAg"/>
+                                    <constraint firstItem="zEb-8F-oQw" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" id="M82-GU-Y5f"/>
+                                    <constraint firstItem="4Ai-OP-o6q" firstAttribute="leading" secondItem="GYC-Gc-iqg" secondAttribute="leading" id="QMJ-AX-w5n"/>
+                                    <constraint firstAttribute="bottom" secondItem="JGK-1y-6Ty" secondAttribute="bottom" id="YDA-AR-8Wj"/>
+                                    <constraint firstItem="rjF-K3-PTa" firstAttribute="height" secondItem="4Ai-OP-o6q" secondAttribute="height" id="fa3-QS-a0U"/>
+                                    <constraint firstItem="e6h-8m-iKd" firstAttribute="leading" secondItem="GYC-Gc-iqg" secondAttribute="leading" id="fow-QO-2bB"/>
+                                    <constraint firstAttribute="trailing" secondItem="42J-l8-s6S" secondAttribute="trailing" id="iuP-VX-DcI"/>
+                                    <constraint firstItem="RON-5w-5Ek" firstAttribute="height" secondItem="4Ai-OP-o6q" secondAttribute="height" multiplier="0.996992" id="jwB-rw-GGJ"/>
+                                    <constraint firstItem="JGK-1y-6Ty" firstAttribute="top" secondItem="e6h-8m-iKd" secondAttribute="bottom" id="lNR-oI-QWf"/>
+                                    <constraint firstItem="RON-5w-5Ek" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" id="ldf-un-yla"/>
+                                    <constraint firstItem="RON-5w-5Ek" firstAttribute="top" secondItem="42J-l8-s6S" secondAttribute="bottom" id="miU-aa-Qyz"/>
+                                    <constraint firstItem="42J-l8-s6S" firstAttribute="width" secondItem="4Ai-OP-o6q" secondAttribute="width" id="t3K-Zd-4aB"/>
+                                    <constraint firstItem="zEb-8F-oQw" firstAttribute="top" secondItem="4Ai-OP-o6q" secondAttribute="bottom" id="thO-1D-T8Q"/>
+                                    <constraint firstItem="JGK-1y-6Ty" firstAttribute="top" secondItem="e6h-8m-iKd" secondAttribute="bottom" id="vGr-3L-Roe"/>
+                                    <constraint firstAttribute="trailing" secondItem="JGK-1y-6Ty" secondAttribute="trailing" id="xJ2-7c-W1F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xYJ-6c-nVi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="04P-1A-zY4"/>
+                            <constraint firstItem="GYC-Gc-iqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3vS-AQ-7xw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xYJ-6c-nVi" secondAttribute="trailing" id="Cfd-CY-O6P"/>
+                            <constraint firstItem="GYC-Gc-iqg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hbu-rl-PFR"/>
+                            <constraint firstItem="xYJ-6c-nVi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lun-mV-ldV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GYC-Gc-iqg" secondAttribute="trailing" id="Z36-cV-Nv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GYC-Gc-iqg" secondAttribute="bottom" id="dfL-et-qBS"/>
+                            <constraint firstItem="xYJ-6c-nVi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xBh-g3-QZt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129.54545454545456" y="110.46025104602511"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8M6-YB-bMt">
+            <objects>
+                <viewController id="IQV-ct-bbQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cIW-Sm-Fnm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUJ-IN-wFJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Victor Raul Hernandez Mejia, matricula:  23170067,  grupo: 7A TN, Desarrollo Movil multiplataforma, Universidad Tecnologica de Torreon</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="axH-vj-KEX"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oUJ-IN-wFJ" firstAttribute="top" secondItem="axH-vj-KEX" secondAttribute="top" id="5np-1C-cGM"/>
+                            <constraint firstItem="axH-vj-KEX" firstAttribute="bottom" secondItem="oUJ-IN-wFJ" secondAttribute="bottom" id="8jo-Ua-uKR"/>
+                            <constraint firstItem="axH-vj-KEX" firstAttribute="trailing" secondItem="oUJ-IN-wFJ" secondAttribute="trailing" id="GX1-6X-NGl"/>
+                            <constraint firstItem="oUJ-IN-wFJ" firstAttribute="leading" secondItem="axH-vj-KEX" secondAttribute="leading" id="OLu-8R-ORO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYv-c8-8vV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="814"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ijL-TR-SqX">
+            <objects>
+                <viewController id="1Mp-JG-GXq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHo-Rk-jeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFk-lu-KmI">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Las lechuzas, con su vuelo etéreo y su penetrante mirada, han cautivado y aterrorizado a la humanidad desde tiempos inmemoriales. Estas aves rapaces nocturnas, envueltas en un halo de misterio y folclore, son mucho más que simples presagios o personajes de leyenda. Son depredadores altamente especializados, dotados de adaptaciones biológicas únicas que las convierten en las reinas indiscutibles de la oscuridad. Popularmente, los términos "lechuza" y "búho" a menudo se usan indistintamente. Sin embargo, desde una perspectiva ornitológica, pertenecen a dos familias distintas dentro del orden de los Estrigiformes. Las lechuzas, propiamente dichas, pertenecen a la familia Tytonidae. La característica más distintiva de esta familia es su disco facial en forma de corazón, sus ojos generalmente más pequeños y oscuros, y la ausencia de penachos de plumas que parecen "orejas". Por otro lado, los búhos pertenecen a la familia Strigidae, que es mucho más numerosa y diversa. Los búhos suelen tener una cabeza más redondeada, un disco facial menos definido o circular y, en muchas especies, presentan los conspicuos penachos de plumas en la cabeza que se asemejan a orejas, aunque no cumplen una función auditiva. La especie más emblemática y reconocida a nivel mundial es la lechuza de campanario o lechuza común (*Tyto alba*). Con su plumaje predominantemente blanco en las partes inferiores y un dorso dorado moteado, es una de las aves con mayor distribución geográfica del planeta, encontrándose en todos los continentes excepto en la Antártida. Fiel a su nombre, esta lechuza a menudo encuentra refugio en graneros, campanarios de iglesias, ruinas y otras estructuras humanas, aunque también habita en áreas abiertas como pastizales, marismas y tierras de cultivo. Son aves principalmente nocturnas y crepusculares, pasando el día en reposo en lugares oscuros y protegidos. La lechuza de campanario es un formidable controlador de plagas. Su dieta se compone principalmente de pequeños roedores como ratones, topillos y musarañas. Una sola familia de lechuzas puede consumir miles de roedores en un año, lo que las convierte en aliadas invaluables para la agricultura. Su técnica de caza es una maravilla de la evolución, basada en el sigilo y la precisión. Aunque la lechuza común es la más conocida, el mundo de las lechuzas es diverso. La Lechuza Tenebrosa o Negra (*Tyto tenebricosa*) es habitante de los bosques húmedos del sureste de Australia y Nueva Guinea; esta especie de plumaje oscuro y ojos grandes está adaptada a la densa vegetación de su entorno. Su dieta incluye mamíferos arborícolas como petauros y zarigüeyas. La Lechuza de las Vizcacheras o Búho Madriguera (*Athene cunicularia*), a pesar de su nombre común, técnicamente pertenece a la familia de los búhos (Strigidae), pero comparte un comportamiento fascinante. Esta pequeña rapaz de patas largas habita en pastizales y zonas áridas de América. A diferencia de otras, es a menudo activa durante el día y anida en madrigueras subterráneas, que a menudo toma de otros animales como los perritos de las praderas o las vizcachas. Su dieta es variada, incluyendo insectos, pequeños reptiles y roedores. En México, se le conoce como "tecolote llanero". Las lechuzas son el resultado de millones de años de evolución que las han perfeccionado para la caza nocturna. Sus habilidades se basan en un conjunto de adaptaciones biológicas extraordinarias. Una de las características más asombrosas de las lechuzas es su capacidad para volar en un silencio casi absoluto. Esto se debe a tres adaptaciones clave en sus plumas: el borde de ataque aserrado, que descompone la turbulencia del aire; el borde de salida desflecado, que amortigua el sonido; y la superficie aterciopelada de las alas, que absorbe el sonido de alta frecuencia. Este vuelo sigiloso les permite acercarse a sus presas sin ser detectadas y, crucialmente, les permite escuchar los movimientos de sus víctimas sin la interferencia del ruido de su propio aleteo. La audición de la lechuza es, posiblemente, su sentido más agudo y una herramienta de caza de precisión letal. El disco facial en forma de corazón actúa como una antena parabólica, recogiendo y canalizando los sonidos hacia los oídos. La clave de su localización sonora tridimensional reside en la asimetría de sus oídos: una abertura auditiva está ligeramente más alta que la otra. Su cerebro procesa las minúsculas diferencias en tiempo e intensidad con que llega el sonido a cada oído para crear un mapa mental increíblemente preciso de la ubicación de la presa. Los ojos de las lechuzas son grandes y están orientados hacia adelante, proporcionándoles una excelente visión binocular y percepción de la profundidad. Sus retinas están densamente pobladas de bastones, las células fotorreceptoras responsables de la visión en condiciones de poca luz. Para compensar que sus ojos son fijos en sus cuencas, las lechuzas poseen una increíble flexibilidad en el cuello, pudiendo girar la cabeza hasta 270 grados. La naturaleza nocturna, el vuelo silencioso y el grito a menudo estridente de la lechuza le han asegurado un lugar prominente en la mitología y el folclore de culturas de todo el mundo, con simbolismos a menudo contradictorios. En la antigua Grecia, la lechuza estaba asociada con Atenea, la diosa de la sabiduría. Sin embargo, en muchas otras culturas, su actividad nocturna la vincularon con la muerte y el inframundo. En el folclore mexicano y mesoamericano, la lechuza a menudo ha sido vista con temor y superstición. Para algunas culturas prehispánicas, eran consideradas mensajeras del inframundo (Xibalbá). Esta percepción se fusionó con creencias europeas, dando lugar a la leyenda de que las lechuzas son brujas transformadas. El dicho popular "Cuando el tecolote canta, el indio muere" refleja esta antigua creencia de que su canto es un presagio de muerte. Lamentablemente, estas supersticiones han llevado a la persecución y muerte injustificada de muchas de estas aves, que desempeñan un papel ecológico fundamental.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lechuza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MKh-Jk-KHc">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Km-zU-4By">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Km-zU-4By" secondAttribute="height" multiplier="1:1" id="sT0-xH-kix"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="raA-qs-I2a"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Km-zU-4By" firstAttribute="centerX" secondItem="KHo-Rk-jeJ" secondAttribute="centerX" id="0fF-D7-ZEg"/>
+                            <constraint firstItem="5Km-zU-4By" firstAttribute="width" secondItem="KHo-Rk-jeJ" secondAttribute="width" id="6eM-JQ-E5Y"/>
+                            <constraint firstItem="raA-qs-I2a" firstAttribute="bottom" secondItem="mFk-lu-KmI" secondAttribute="bottom" id="9P4-bf-z8q"/>
+                            <constraint firstItem="MKh-Jk-KHc" firstAttribute="trailing" secondItem="5Km-zU-4By" secondAttribute="trailing" id="9qn-i4-FJn"/>
+                            <constraint firstItem="MKh-Jk-KHc" firstAttribute="leading" secondItem="5Km-zU-4By" secondAttribute="leading" id="9yw-6w-5cy"/>
+                            <constraint firstItem="5Km-zU-4By" firstAttribute="top" secondItem="raA-qs-I2a" secondAttribute="top" id="BvS-ye-svS"/>
+                            <constraint firstItem="mFk-lu-KmI" firstAttribute="leading" secondItem="raA-qs-I2a" secondAttribute="leading" id="SEw-Lz-IOT"/>
+                            <constraint firstItem="mFk-lu-KmI" firstAttribute="top" secondItem="MKh-Jk-KHc" secondAttribute="bottom" id="Seh-nY-ySZ"/>
+                            <constraint firstItem="mFk-lu-KmI" firstAttribute="top" secondItem="MKh-Jk-KHc" secondAttribute="bottom" constant="14" id="Ty9-8I-Svk"/>
+                            <constraint firstItem="mFk-lu-KmI" firstAttribute="trailing" secondItem="raA-qs-I2a" secondAttribute="trailing" id="VeC-KM-yyM"/>
+                            <constraint firstItem="MKh-Jk-KHc" firstAttribute="top" secondItem="5Km-zU-4By" secondAttribute="bottom" id="it1-0m-T9K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hik-nk-nsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LxT-x0-fMj">
+            <objects>
+                <viewController id="xji-nb-91W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6oD-fZ-KrW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="SeR-kL-TYG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SeR-kL-TYG" secondAttribute="height" multiplier="1:1" id="08q-pe-4gl"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eQ-r0-zlU">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">En México y en gran parte de Latinoamérica, el término "tecolote" (que viene del náhuatl tecolotl) es el nombre común que le damos a los búhos. Son aves fascinantes y distintas a las lechuzas. Aquí te hablo exclusivamente de ellos.
+
+Los búhos son aves rapaces nocturnas que pertenecen a la familia Strigidae. Esta es la familia más grande y diversa de búhos en el mundo. Se distinguen físicamente por su cabeza grande y redondeada, sus ojos frontales y un disco facial en forma de círculo (no de corazón). La característica más icónica de muchas especies de búhos son los penachos de plumas en la cabeza, que parecen orejas o cuernos, pero no cumplen una función auditiva; se cree que les sirven para el camuflaje y la comunicación.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-6z-FyB">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jiE-pp-H9X"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a5k-6z-FyB" firstAttribute="leading" secondItem="SeR-kL-TYG" secondAttribute="leading" id="27P-NQ-E8g"/>
+                            <constraint firstItem="SeR-kL-TYG" firstAttribute="width" secondItem="6oD-fZ-KrW" secondAttribute="width" id="3rd-GT-mG3"/>
+                            <constraint firstItem="3eQ-r0-zlU" firstAttribute="top" secondItem="a5k-6z-FyB" secondAttribute="bottom" id="Acu-XE-WuG"/>
+                            <constraint firstItem="3eQ-r0-zlU" firstAttribute="trailing" secondItem="jiE-pp-H9X" secondAttribute="trailing" id="OC3-wP-FCg"/>
+                            <constraint firstItem="a5k-6z-FyB" firstAttribute="top" secondItem="SeR-kL-TYG" secondAttribute="bottom" id="PU6-A4-42J"/>
+                            <constraint firstItem="SeR-kL-TYG" firstAttribute="top" secondItem="jiE-pp-H9X" secondAttribute="top" id="Tp2-8x-4kf"/>
+                            <constraint firstItem="3eQ-r0-zlU" firstAttribute="top" secondItem="a5k-6z-FyB" secondAttribute="bottom" constant="14" id="UZl-nQ-psq"/>
+                            <constraint firstItem="jiE-pp-H9X" firstAttribute="bottom" secondItem="3eQ-r0-zlU" secondAttribute="bottom" id="XZv-zF-g2O"/>
+                            <constraint firstItem="3eQ-r0-zlU" firstAttribute="leading" secondItem="jiE-pp-H9X" secondAttribute="leading" id="bZc-VO-1Hd"/>
+                            <constraint firstItem="a5k-6z-FyB" firstAttribute="trailing" secondItem="SeR-kL-TYG" secondAttribute="trailing" id="pso-QB-AOW"/>
+                            <constraint firstItem="SeR-kL-TYG" firstAttribute="centerX" secondItem="6oD-fZ-KrW" secondAttribute="centerX" id="wcr-Os-v37"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vry-Du-YLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Xv-tt-Da3">
+            <objects>
+                <viewController id="6Pm-Va-IbC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cRH-bm-V8d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8a-nc-ppg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x8a-nc-ppg" secondAttribute="height" multiplier="1:1" id="0tI-ZD-qfw"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFG-Ks-l72">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">El guacamayo de Spix, conocido científicamente como *Cyanopsitta spixii*, es una especie de loro que representa una de las historias de conservación más dramáticas y esperanzadoras del mundo. Nativo exclusivamente de una región muy específica de Brasil, este guacamayo de tamaño mediano es célebre por su espectacular plumaje en diversos tonos de azul, que van desde un azul grisáceo pálido en la cabeza hasta un azul vibrante en el cuerpo, las alas y la larga cola. Su rostro presenta una zona de piel desnuda de color gris alrededor de los ojos, que en los adultos son de un distintivo color amarillo pálido. Su pico, fuerte y ganchudo, es completamente negro, una característica que lo distingue de otros guacamayos. Con una longitud de aproximadamente 56 centímetros y un peso que ronda los 300 a 400 gramos, es considerablemente más pequeño que otros guacamayos azules más conocidos, como el guacamayo jacinto.
+
+La historia de su descubrimiento para la ciencia occidental se remonta a 1819, cuando el naturalista alemán Johann Baptist von Spix recolectó un espécimen en el estado de Bahía, Brasil. Sin embargo, la especie no fue formalmente descrita hasta 1832. Su hábitat natural era extremadamente restringido y especializado, limitándose a los bosques de galería que crecen a lo largo de los cursos de agua estacionales dentro del bioma de la Caatinga, un ecosistema de matorral espinoso semiárido en el noreste de Brasil. Su existencia estaba intrínsecamente ligada a un tipo de árbol específico, el *Tabebuia aurea*, conocido localmente como "caraibeira", en cuyos huecos anidaba casi exclusivamente. Esta dependencia tan específica de un recurso limitado fue uno de los factores que sellaron su vulnerabilidad. Su dieta se componía principalmente de las semillas y frutos de los árboles y arbustos de la Caatinga, utilizando su poderoso pico para romper las cáscaras duras de las nueces.
+
+El declive del guacamayo de Spix en la naturaleza fue un proceso trágico y relativamente rápido, impulsado por una combinación devastadora de factores. La destrucción de su hábitat fue primordial; la tala de los bosques de galería para la agricultura y la cría de ganado, especialmente cabras, destruyó no solo sus fuentes de alimento sino, críticamente, los viejos árboles de caraibeira que necesitaban para anidar. A esta presión se sumó la introducción de especies invasoras, como las abejas africanizadas, que competían agresivamente por las cavidades de los nidos, a menudo desplazando a las aves. Sin embargo, el golpe de gracia fue la captura ilegal para el comercio de mascotas exóticas. La extrema rareza y la belleza del guacamayo de Spix lo convirtieron en un objetivo de alto valor para los traficantes, quienes capturaron a los pocos individuos que quedaban para abastecer a coleccionistas privados de todo el mundo. A finales de la década de 1980, la población silvestre se había reducido a unos pocos individuos, y en 1990, solo se conocía la existencia de un único macho en la naturaleza. Este último macho formó una insólita pareja con una hembra de guacamayo de Illiger, pero nunca tuvieron descendencia. Su desaparición en el año 2000 marcó la extinción oficial de la especie en estado salvaje.
+
+Con la especie desaparecida de su hábitat natural, la única esperanza para su supervivencia residía en la pequeña y fragmentada población cautiva dispersa en colecciones privadas. Lo que siguió fue un esfuerzo de conservación internacional sin precedentes, complejo y a menudo tenso, que requirió la colaboración de conservacionistas, agencias gubernamentales como el Instituto Chico Mendes para la Conservación de la Biodiversidad (ICMBio) de Brasil, y organizaciones privadas como la Association for the Conservation of Threatened Parrots (ACTP) en Alemania y la Al Wabra Wildlife Preservation en Qatar. El desafío era monumental: localizar a todos los individuos cautivos, establecer un libro genealógico para gestionar la genética de una población con una diversidad extremadamente limitada y desarrollar protocolos de cría exitosos. La mayoría de los ejemplares cautivos descendían de muy pocos fundadores, lo que hacía que el riesgo de endogamia y problemas genéticos fuera muy alto. A través de décadas de trabajo meticuloso, utilizando técnicas como la inseminación artificial y un cuidadoso emparejamiento genético, la población cautiva comenzó a crecer lentamente, pasando de apenas unas pocas docenas a más de cien individuos.
+
+El objetivo final de este arduo programa de cría siempre fue la reintroducción del guacamayo de Spix en su hogar ancestral en la Caatinga. Este proyecto, igualmente ambicioso, implicó la restauración del hábitat degradado, la plantación de miles de árboles nativos, y un profundo trabajo de compromiso con las comunidades locales para convertirlas en aliadas de la conservación. Se estableció un centro de reintroducción en Curaçá, Bahía, diseñado para aclimatar a las aves nacidas en cautiverio a las vistas, los sonidos y los alimentos de su entorno natural. En junio de 2022, se alcanzó un hito histórico: un primer grupo de guacamayos de Spix fue liberado en un área protegida. Para facilitar su adaptación, fueron liberados junto a un grupo de guacamayos de Illiger, una especie nativa de la zona que podía actuar como mentora, enseñándoles a encontrar comida y a evitar a los depredadores. Equipados con transmisores de radio para un monitoreo constante, las aves comenzaron a explorar su nuevo hogar, a formar parejas y a investigar cavidades para anidar. El éxito del proyecto alcanzó un nuevo nivel cuando, en 2023, se confirmó el nacimiento de los primeros polluelos de guacamayo de Spix en la naturaleza después de más de dos décadas, un testimonio conmovedor de la resiliencia de la especie y la dedicación humana. El viaje del guacamayo de Spix desde el borde de la aniquilación total hasta su frágil pero esperanzador regreso a los cielos de Brasil es un poderoso símbolo de que, incluso cuando una especie ha sido declarada extinta en la naturaleza, los esfuerzos concertados de conservación pueden revertir el curso de la extinción.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guacamayo de Spix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-7b-EP6">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rb1-y4-y4S"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wmq-7b-EP6" firstAttribute="top" secondItem="x8a-nc-ppg" secondAttribute="bottom" id="Pvy-Vl-gVT"/>
+                            <constraint firstItem="x8a-nc-ppg" firstAttribute="top" secondItem="Rb1-y4-y4S" secondAttribute="top" id="TP2-DF-k1n"/>
+                            <constraint firstItem="iFG-Ks-l72" firstAttribute="top" secondItem="wmq-7b-EP6" secondAttribute="bottom" id="XLh-bj-XFE"/>
+                            <constraint firstItem="x8a-nc-ppg" firstAttribute="centerX" secondItem="cRH-bm-V8d" secondAttribute="centerX" id="YUH-X1-C9b"/>
+                            <constraint firstItem="iFG-Ks-l72" firstAttribute="trailing" secondItem="Rb1-y4-y4S" secondAttribute="trailing" id="d48-Sk-sZm"/>
+                            <constraint firstItem="Rb1-y4-y4S" firstAttribute="bottom" secondItem="iFG-Ks-l72" secondAttribute="bottom" id="dDJ-3i-783"/>
+                            <constraint firstItem="wmq-7b-EP6" firstAttribute="leading" secondItem="x8a-nc-ppg" secondAttribute="leading" id="gfu-x0-0E1"/>
+                            <constraint firstItem="x8a-nc-ppg" firstAttribute="width" secondItem="cRH-bm-V8d" secondAttribute="width" id="hrQ-Nn-Bfq"/>
+                            <constraint firstItem="iFG-Ks-l72" firstAttribute="top" secondItem="wmq-7b-EP6" secondAttribute="bottom" constant="14" id="jtW-xI-N4q"/>
+                            <constraint firstItem="wmq-7b-EP6" firstAttribute="trailing" secondItem="x8a-nc-ppg" secondAttribute="trailing" id="qnE-Q9-dLQ"/>
+                            <constraint firstItem="iFG-Ks-l72" firstAttribute="leading" secondItem="Rb1-y4-y4S" secondAttribute="leading" id="wvN-Wj-Vvu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCA-4K-Jfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="92L-tk-8e2">
+            <objects>
+                <viewController id="Zxx-Jo-LcX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HnX-xZ-Ji2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="YYT-27-Nxs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YYT-27-Nxs" secondAttribute="height" multiplier="1:1" id="Lzz-9S-sGD"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d76-xI-nQZ">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Los cuervos, miembros del género Corvus, son aves extraordinariamente adaptables e inteligentes que han logrado prosperar en una vasta gama de entornos en casi todo el mundo, desde las densas tundras árticas hasta los áridos desiertos y las bulliciosas metrópolis urbanas. Este género incluye no solo a los cuervos propiamente dichos, sino también a las cornejas, los grajos y los cuervos grandes (ravens), todos pertenecientes a la familia de los córvidos. Físicamente, son reconocibles por su plumaje predominantemente negro, a menudo con un brillo iridiscente que puede reflejar tonos púrpuras, azules o verdes bajo la luz del sol. Poseen picos robustos y patas fuertes, herramientas versátiles que les permiten explotar una increíble variedad de fuentes de alimento. Su dieta es un testimonio de su oportunismo; son omnívoros consumados que comen prácticamente cualquier cosa, desde insectos, gusanos, semillas, nueces y frutas, hasta pequeños mamíferos, huevos y polluelos de otras aves, carroña y los restos de comida que encuentran en los entornos humanos. Esta flexibilidad dietética es una de las claves de su éxito global.
+
+Lo que verdaderamente distingue a los cuervos y los eleva por encima de muchas otras aves es su asombrosa capacidad cognitiva, que a menudo se compara con la de los primates. Poseen uno de los cerebros más grandes en relación con su tamaño corporal en el reino aviar, con una notable densidad de neuronas en su prosencéfalo, el área asociada con el pensamiento complejo. Esta sofisticación neurológica se manifiesta en una serie de comportamientos impresionantes. Son famosos por su habilidad para resolver problemas complejos de múltiples pasos para obtener comida, como se ha demostrado en numerosos experimentos de laboratorio donde aprenden a usar una secuencia de herramientas para alcanzar una recompensa. En la naturaleza, se ha observado a los cuervos de Nueva Caledonia, por ejemplo, fabricar herramientas a partir de ramitas y hojas para extraer larvas de los troncos de los árboles, una habilidad que transmiten culturalmente a las generaciones más jóvenes. No solo usan herramientas, sino que también entienden conceptos físicos abstractos como el desplazamiento del agua, dejando caer piedras en un tubo para elevar el nivel del agua y poner un trozo de comida flotante a su alcance.
+
+Más allá de la resolución de problemas, los cuervos demuestran una vida social y emocional de una complejidad sorprendente. Viven en unidades familiares muy unidas, a menudo compuestas por una pareja reproductora y su descendencia de varias temporadas, que colaboran en la búsqueda de alimento y en la defensa del territorio contra rivales e intrusos. Su sistema de comunicación es increíblemente matizado, utilizando una amplia gama de graznidos, chasquidos y llamadas para transmitir información específica sobre la ubicación de la comida, la presencia de depredadores o la identidad de otros individuos. Quizás una de sus habilidades más notables es su capacidad para reconocer y recordar rostros humanos. Estudios han demostrado que los cuervos pueden recordar a una persona que representó una amenaza para ellos durante años, emitiendo llamadas de alarma y acosando a esa persona cada vez que la ven, e incluso enseñando a otros cuervos de su grupo a reconocer y reaccionar ante el mismo individuo.
+
+Este agudo sentido de la memoria y la conciencia social también se extiende a su relación con la muerte. Los cuervos son conocidos por congregarse alrededor de sus congéneres muertos en lo que se ha descrito como "funerales". Durante estas reuniones, permanecen en silencio o emiten llamadas suaves mientras observan al individuo caído. Los científicos creen que este comportamiento no es un acto de duelo en el sentido humano, sino más bien una forma de recopilar información. Al observar al muerto y el entorno, pueden aprender sobre nuevas amenazas o depredadores en su territorio, procesando información vital para su propia supervivencia. Esta capacidad para el aprendizaje social y la transmisión de información es fundamental para su resiliencia como especie. Su inteligencia también se manifiesta en el juego, un comportamiento a menudo asociado con animales cognitivamente avanzados. Se les ha visto deslizarse por tejados nevados por pura diversión, jugar a tirar de las colas de otros animales o realizar complejas acrobacias aéreas. Esta combinación de inteligencia práctica, memoria a largo plazo, estructura social compleja y una capacidad sin igual para adaptarse a los cambios ambientales ha cimentado la posición del cuervo no solo como un superviviente consumado, sino como una de las criaturas más fascinantes e inteligentes del reino animal.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuervo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d7r-dz-JCR">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CYK-0B-5HN"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d7r-dz-JCR" firstAttribute="top" secondItem="YYT-27-Nxs" secondAttribute="bottom" id="0UT-gU-aJV"/>
+                            <constraint firstItem="d76-xI-nQZ" firstAttribute="trailing" secondItem="CYK-0B-5HN" secondAttribute="trailing" id="3PX-zy-C4L"/>
+                            <constraint firstItem="YYT-27-Nxs" firstAttribute="top" secondItem="CYK-0B-5HN" secondAttribute="top" id="3gQ-By-Q2K"/>
+                            <constraint firstItem="d76-xI-nQZ" firstAttribute="top" secondItem="d7r-dz-JCR" secondAttribute="bottom" id="99w-Vd-rfr"/>
+                            <constraint firstItem="d76-xI-nQZ" firstAttribute="leading" secondItem="CYK-0B-5HN" secondAttribute="leading" id="JkE-uV-rjg"/>
+                            <constraint firstItem="d7r-dz-JCR" firstAttribute="leading" secondItem="YYT-27-Nxs" secondAttribute="leading" id="X1P-Dw-y6t"/>
+                            <constraint firstItem="d76-xI-nQZ" firstAttribute="top" secondItem="d7r-dz-JCR" secondAttribute="bottom" constant="14" id="jBP-Su-LoT"/>
+                            <constraint firstItem="CYK-0B-5HN" firstAttribute="bottom" secondItem="d76-xI-nQZ" secondAttribute="bottom" id="oQ4-cd-CLs"/>
+                            <constraint firstItem="YYT-27-Nxs" firstAttribute="width" secondItem="HnX-xZ-Ji2" secondAttribute="width" id="s1w-wR-LPC"/>
+                            <constraint firstItem="d7r-dz-JCR" firstAttribute="trailing" secondItem="YYT-27-Nxs" secondAttribute="trailing" id="tdn-1K-1dx"/>
+                            <constraint firstItem="YYT-27-Nxs" firstAttribute="centerX" secondItem="HnX-xZ-Ji2" secondAttribute="centerX" id="tvH-8C-4mG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1c-re-Srj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1233" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pGK-Fi-9Xk">
+            <objects>
+                <viewController id="Iww-l2-ohu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5k-Q3-k8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-7g-ij9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Cf-7g-ij9" secondAttribute="height" multiplier="1:1" id="TLI-B7-Hhe"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRb-iv-xTL">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">El zopilote, un ave omnipresente y a menudo incomprendida en los cielos de las Américas, es una figura fundamental en el ecosistema, desempeñando el papel crucial de limpiador de la naturaleza. Bajo este nombre común, principalmente en México y Centroamérica, se agrupan varias especies de buitres del Nuevo Mundo, siendo los más comunes el zopilote negro o zopilote común (*Coragyps atratus*) y el zopilote aura o auras (*Cathartes aura*), también conocido como buitre pavo. Aunque a menudo se les ve juntos y comparten la misma función ecológica, son especies distintas con características y métodos de supervivencia únicos. Físicamente, el zopilote negro es un ave robusta, de plumaje completamente negro, con una cabeza desnuda, arrugada y de color gris oscuro o negro. Sus alas son anchas y relativamente cortas, terminando en puntas plateadas o blancas en la parte inferior que son visibles durante el vuelo, y su cola es corta y cuadrada. Por otro lado, el zopilote aura se distingue por su cabeza calva y de color rojo intenso en los adultos, que se asemeja a la de un pavo, y por un plumaje de color marrón oscuro que parece negro a distancia. En vuelo, su silueta es característica: mantiene sus alas largas y estrechas en una distintiva forma de V o diedro y se balancea de manera inestable con las corrientes de aire, a diferencia del vuelo más estable y con aleteos más potentes del zopilote negro.
+
+La adaptación más fascinante de estos buitres reside en sus métodos para localizar su alimento: la carroña. El zopilote aura posee un sentido del olfato excepcionalmente desarrollado, una rareza entre las aves rapaces. Es capaz de detectar los gases producidos por la descomposición de la materia orgánica, específicamente el etilmercaptano, desde grandes alturas. Esto le permite localizar cadáveres ocultos bajo la cubierta de los bosques o la vegetación densa. En contraste, el zopilote negro carece de este agudo sentido del olfato y depende casi por completo de su aguda vista. A menudo vuela a mayor altitud, no solo para escanear el suelo en busca de animales muertos, sino también para observar el comportamiento de otros animales. Con frecuencia, sigue a los zopilotes aura, aprovechándose de su superior capacidad olfativa. Una vez que un aura desciende hacia un cadáver, es común que una congregación de zopilotes negros, más agresivos y sociales, llegue al lugar y domine la fuente de alimento, desplazando a los auras que la encontraron.
+
+Su papel como carroñeros es de una importancia ecológica vital. Al consumir rápidamente los cadáveres de animales, previenen la propagación de enfermedades que podrían surgir de la putrefacción de la carne, como el botulismo, el cólera o el ántrax. Su sistema digestivo es extraordinariamente robusto, con ácidos gástricos extremadamente corrosivos que neutralizan patógenos que serían letales para la mayoría de los otros seres vivos. La cabeza y el cuello desprovistos de plumas son una adaptación higiénica clave; al alimentarse introduciendo la cabeza en los cadáveres, la ausencia de plumaje evita que los restos de sangre y fluidos corporales se adhieran y se conviertan en un foco de infección, permitiendo que la piel desnuda se seque y se esterilice con la luz del sol. Además, practican un comportamiento conocido como urohidrosis: defecan sobre sus propias patas. El líquido se evapora, enfriando al ave en climas cálidos, y el ácido úrico presente en sus excrementos actúa como un antiséptico que mata las bacterias que puedan haber acumulado al caminar sobre la carroña.
+
+Socialmente, son aves gregarias. A menudo se les ve volando en grandes grupos circulares, aprovechando las corrientes térmicas ascendentes para ganar altura sin esfuerzo y planear durante horas con un gasto mínimo de energía. Por la noche, se congregan en dormideros comunales, a menudo en árboles altos, torres de comunicación o estructuras abandonadas, donde descansan en grandes números. Estas reuniones no solo ofrecen protección contra depredadores, sino que también funcionan como centros de información, donde las aves pueden seguir a otras más exitosas hacia fuentes de alimento al día siguiente. No construyen nidos elaborados; en su lugar, depositan sus huevos, generalmente dos, directamente en el suelo en lugares protegidos como cuevas, huecos de árboles, matorrales densos o edificios abandonados. Ambos padres participan en la incubación y en la alimentación de los polluelos a través de la regurgitación. A pesar de su apariencia a veces sombría y su asociación con la muerte, el zopilote es un componente indispensable del equilibrio natural, un eficiente y resistente especialista en saneamiento que realiza un servicio ecológico silencioso pero esencial dondequiera que vuele.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zopilote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-Gb-QrV">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Rj-xi-Y2E"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QRb-iv-xTL" firstAttribute="top" secondItem="VLY-Gb-QrV" secondAttribute="bottom" id="5uW-vZ-6T2"/>
+                            <constraint firstItem="5Cf-7g-ij9" firstAttribute="top" secondItem="8Rj-xi-Y2E" secondAttribute="top" id="80d-7I-v1b"/>
+                            <constraint firstItem="VLY-Gb-QrV" firstAttribute="top" secondItem="5Cf-7g-ij9" secondAttribute="bottom" id="Bvc-ud-K1V"/>
+                            <constraint firstItem="QRb-iv-xTL" firstAttribute="trailing" secondItem="8Rj-xi-Y2E" secondAttribute="trailing" id="CwE-Tg-z1r"/>
+                            <constraint firstItem="5Cf-7g-ij9" firstAttribute="centerX" secondItem="h5k-Q3-k8E" secondAttribute="centerX" id="D3R-Wy-aL3"/>
+                            <constraint firstItem="QRb-iv-xTL" firstAttribute="leading" secondItem="8Rj-xi-Y2E" secondAttribute="leading" id="EPa-AB-LWg"/>
+                            <constraint firstItem="5Cf-7g-ij9" firstAttribute="width" secondItem="h5k-Q3-k8E" secondAttribute="width" id="F2j-gt-8wG"/>
+                            <constraint firstItem="VLY-Gb-QrV" firstAttribute="trailing" secondItem="5Cf-7g-ij9" secondAttribute="trailing" id="VDD-zp-00v"/>
+                            <constraint firstItem="VLY-Gb-QrV" firstAttribute="leading" secondItem="5Cf-7g-ij9" secondAttribute="leading" id="a5f-sZ-jey"/>
+                            <constraint firstItem="QRb-iv-xTL" firstAttribute="top" secondItem="VLY-Gb-QrV" secondAttribute="bottom" constant="14" id="c08-qH-gDr"/>
+                            <constraint firstItem="8Rj-xi-Y2E" firstAttribute="bottom" secondItem="QRb-iv-xTL" secondAttribute="bottom" id="grW-PJ-tYQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jq1-7G-qQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-496" y="-562"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uoo-oD-kFA">
+            <objects>
+                <viewController id="CT4-x6-ccN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ERm-Fm-Pgz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="657"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="99J-jc-yEI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="99J-jc-yEI" secondAttribute="height" multiplier="1:1" id="jYI-s6-8K3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="172-Vu-LiK">
+                                <rect key="frame" x="0.0" y="430" width="375" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">El loro gris africano, conocido comúnmente como yaco de cola roja (*Psittacus erithacus*), es una de las especies de aves más reconocidas y estudiadas del mundo, célebre no por un plumaje colorido, sino por una inteligencia y una capacidad para la comunicación que rivalizan con las de los grandes simios y los delfines. Originario de las selvas tropicales de África Occidental y Central, este loro de tamaño mediano se distingue por su elegante plumaje en diferentes tonos de gris, que contrasta dramáticamente con las plumas de un rojo vibrante y brillante de su corta cola cuadrada. Su rostro está enmarcado por una mancha de piel blanca y desnuda alrededor de sus ojos inteligentes y pálidos, y posee un pico fuerte y ganchudo de color negro, perfectamente adaptado para romper nueces y semillas duras. Es un ave altamente social que en la naturaleza forma grandes bandadas, especialmente al atardecer, cuando se congregan en dormideros comunales en las copas de los árboles altos, creando un espectáculo ruidoso con una amplia gama de silbidos, graznidos y chillidos que utilizan para comunicarse.
+
+La característica más sobresaliente del yaco es su asombrosa capacidad cognitiva y su habilidad para imitar el habla humana con una claridad y un contexto sorprendentes. A diferencia de otros loros que simplemente repiten sonidos, los grises africanos han demostrado en numerosos estudios la capacidad de comprender conceptos abstractos y utilizar el lenguaje de manera significativa. El ejemplo más famoso es el del loro Alex, sujeto de un estudio de treinta años por la psicóloga animal Irene Pepperberg. Alex aprendió un vocabulario de más de cien palabras y podía identificar objetos, colores, formas y materiales. Era capaz de comprender conceptos como "igual" y "diferente", contar objetos hasta seis y demostrar una comprensión de la idea de "cero", algo que se creía exclusivo de humanos y algunos primates. La capacidad de los yacos para no solo imitar, sino también asociar palabras con significados, revela un nivel de procesamiento cognitivo extremadamente sofisticado, lo que los convierte en uno de los animales más inteligentes del planeta.
+
+En su hábitat natural, la dieta del yaco se compone principalmente de frutas, nueces, semillas y bayas, con una preferencia particular por los frutos de la palma de aceite. Utilizan su agilidad y su pico fuerte para trepar por las ramas en lugar de volar largas distancias, moviéndose metódicamente a través del dosel del bosque en busca de alimento. Son aves monógamas que forman lazos de pareja de por vida. Anidan en las cavidades de árboles viejos y altos, donde la hembra suele poner de dos a cuatro huevos que incuba durante aproximadamente un mes. Durante este tiempo, el macho es el principal responsable de alimentar a su pareja. Una vez que los polluelos nacen, ambos padres comparten la tarea de alimentarlos mediante regurgitación hasta que están listos para abandonar el nido, lo que ocurre después de unas doce semanas.
+
+Lamentablemente, la misma inteligencia y capacidad de habla que los hacen tan fascinantes también han sido la causa de su grave declive en la naturaleza. Durante décadas, el yaco ha sido una de las aves silvestres más traficadas del mundo para el comercio de mascotas. La demanda de yacos como compañeros ha impulsado una captura ilegal masiva y cruel, donde miles de aves son atrapadas en la selva, a menudo con métodos que resultan en una alta mortalidad. Esta presión implacable, combinada con la deforestación generalizada y la degradación de su hábitat selvático, ha diezmado sus poblaciones silvestres. La situación se volvió tan crítica que en 2016, la Convención sobre el Comercio Internacional de Especies Amenazadas (CITES) elevó al loro gris africano al Apéndice I, su máximo nivel de protección, prohibiendo todo comercio internacional de la especie capturada en la naturaleza. La Unión Internacional para la Conservación de la Naturaleza (UICN) lo clasifica como En Peligro. En cautiverio, su alta inteligencia y su naturaleza social se traducen en necesidades emocionales y psicológicas extremadamente complejas. Son aves que requieren una enorme cantidad de estimulación mental, interacción social y enriquecimiento ambiental para prosperar. Si se les descuida, aburre o estresa, pueden desarrollar problemas de comportamiento graves, como el picaje de plumas y la agresión, lo que los convierte en mascotas muy exigentes cuyo cuidado representa un compromiso de por vida, ya que pueden vivir entre 50 y 70 años.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loro Gris Africano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cdm-kB-3rq">
+                                <rect key="frame" x="0.0" y="375" width="375" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ahl-yj-kVo"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="99J-jc-yEI" firstAttribute="centerX" secondItem="ERm-Fm-Pgz" secondAttribute="centerX" id="3yI-mH-DPn"/>
+                            <constraint firstItem="Cdm-kB-3rq" firstAttribute="top" secondItem="99J-jc-yEI" secondAttribute="bottom" id="6tf-3J-AJS"/>
+                            <constraint firstItem="172-Vu-LiK" firstAttribute="leading" secondItem="Ahl-yj-kVo" secondAttribute="leading" id="7Cc-SW-SUK"/>
+                            <constraint firstItem="Cdm-kB-3rq" firstAttribute="leading" secondItem="99J-jc-yEI" secondAttribute="leading" id="9Fh-Sl-FP0"/>
+                            <constraint firstItem="Cdm-kB-3rq" firstAttribute="trailing" secondItem="99J-jc-yEI" secondAttribute="trailing" id="L5b-nW-rDx"/>
+                            <constraint firstItem="Ahl-yj-kVo" firstAttribute="bottom" secondItem="172-Vu-LiK" secondAttribute="bottom" id="MeF-xf-2Eb"/>
+                            <constraint firstItem="99J-jc-yEI" firstAttribute="width" secondItem="ERm-Fm-Pgz" secondAttribute="width" id="T4Y-eM-Kvj"/>
+                            <constraint firstItem="172-Vu-LiK" firstAttribute="trailing" secondItem="Ahl-yj-kVo" secondAttribute="trailing" id="Wyh-NF-F5B"/>
+                            <constraint firstItem="99J-jc-yEI" firstAttribute="top" secondItem="Ahl-yj-kVo" secondAttribute="top" id="h1D-ZQ-H0u"/>
+                            <constraint firstItem="172-Vu-LiK" firstAttribute="top" secondItem="Cdm-kB-3rq" secondAttribute="bottom" id="l9x-1x-9ii"/>
+                            <constraint firstItem="172-Vu-LiK" firstAttribute="top" secondItem="Cdm-kB-3rq" secondAttribute="bottom" constant="14" id="yNd-bL-9E8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc5-Vh-rY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="-571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.0.png" width="1024" height="1024"/>
+        <image name="1.1.png" width="1024" height="1024"/>
+        <image name="2.0.png" width="1024" height="1024"/>
+        <image name="2.1.png" width="1024" height="1024"/>
+        <image name="3.0.png" width="1200" height="1200"/>
+        <image name="3.1.png" width="1024" height="1024"/>
+        <image name="4.0.png" width="1024" height="1024"/>
+        <image name="4.1.png" width="1024" height="1024"/>
+        <image name="5.0.png" width="1024" height="1024"/>
+        <image name="5.1.png" width="1024" height="1024"/>
+        <image name="6.0.png" width="1024" height="1024"/>
+        <image name="6.1.png" width="1024" height="1024"/>
+        <image name="backround.png" width="1024" height="1024"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
