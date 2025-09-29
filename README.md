@@ -8,7 +8,7 @@ This project is a comprehensive technical showcase of building a complete, multi
 
 | App Icon |
 | :------: |
-| ![App Icon](![Image](https://github.com/user-attachments/assets/02181a64-3b76-442b-b11e-8ad3a04d7ffd)) |
+| ![App Icon](![Image](https://github.com/user-attachments/assets/130fde2a-6e8a-42b8-8eff-0f2d47123d64)) |
 *A custom, native app icon designed for a polished user experience.*
 
 ---
@@ -19,7 +19,7 @@ Discover the application's visual design and seamless user experience through th
 
 | Initial Launch & Grid View | Detailed Bird Profile | Scrolling Detail View |
 | :-------------------------: | :-----------------------: | :---------------------: |
-| ![Grid View](![Image](https://github.com/user-attachments/assets/18d5d247-24fb-4272-b768-1e7fcfa7b4be)) | ![Detail View](![Image](https://github.com/user-attachments/assets/c070e663-7fba-4050-b514-e24703cc9195)) | ![Scrolling Detail](![Image](https://github.com/user-attachments/assets/a70516e1-d940-48ed-a18f-51bd57d88134)) |
+| ![Grid View](![Image](https://github.com/user-attachments/assets/6dc81c37-3083-4125-9914-05405a9e14a0)) | ![Detail View](![Image](https://github.com/user-attachments/assets/5bc7b849-b2cd-4e05-8e4d-6559ac15cdc0)) | ![Scrolling Detail](![Image](https://github.com/user-attachments/assets/7bee8dd7-3e91-48c4-a567-6ee0f039b146)) |
 *From left to right: The app's initial launch showing the grid of birds, a full detail profile of a selected bird, and the detail view scrolled to showcase extensive content.*
 
 ---
