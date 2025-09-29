@@ -6,21 +6,42 @@ This project is a comprehensive technical showcase of building a complete, multi
 
 ## 🚀 App Icon
 
-| App Icon |
-| :------: |
-| ![App Icon](![Image](https://github.com/user-attachments/assets/130fde2a-6e8a-42b8-8eff-0f2d47123d64)) |
-*A custom, native app icon designed for a polished user experience.*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/130fde2a-6e8a-42b8-8eff-0f2d47123d64" width="300">
+</p>
+<p align="center">
+  <em>A custom, native app icon designed for a polished on-device appearance.</em>
+</p>
 
 ---
 
 ## 📸 Screenshots & User Flow
 
-Discover the application's visual design and seamless user experience through these key screens:
+The application provides a clean and intuitive user flow, from the main gallery to the detailed content.
 
-| Initial Launch & Grid View | Detailed Bird Profile | Scrolling Detail View |
-| :-------------------------: | :-----------------------: | :---------------------: |
-| ![Grid View](![Image](https://github.com/user-attachments/assets/6dc81c37-3083-4125-9914-05405a9e14a0)) | ![Detail View](![Image](https://github.com/user-attachments/assets/5bc7b849-b2cd-4e05-8e4d-6559ac15cdc0)) | ![Scrolling Detail](![Image](https://github.com/user-attachments/assets/7bee8dd7-3e91-48c4-a567-6ee0f039b146)) |
-*From left to right: The app's initial launch showing the grid of birds, a full detail profile of a selected bird, and the detail view scrolled to showcase extensive content.*
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6dc81c37-3083-4125-9914-05405a9e14a0" width="300">
+  <br>
+  <em><strong>1. Main Gallery:</strong> A clean grid view showcasing the different bird species.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5bc7b849-b2cd-4e05-8e4d-6559ac15cdc0" width="300">
+  <br>
+  <em><strong>2. Detail View:</strong> After selecting a bird, a detailed profile with a large image is displayed.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7bee8dd7-3e91-48c4-a567-6ee0f039b146" width="300">
+  <br>
+  <em><strong>3. Scrollable Content:</strong> The text view scrolls to reveal extensive information, adapting to any content length.</em>
+</p>
 
 ---
 
@@ -53,4 +74,20 @@ The primary objective of this project was to showcase advanced proficiency in vi
 * **Mastery of Visual UI Development:** Constructing a complete, multi-screen application exclusively through Xcode's visual tools, demonstrating efficient and precise UI assembly.
 * **Proficient Storyboard & Segue Management:** Implementing sophisticated navigation flows and screen relationships purely through Storyboard features, bypassing custom code for typical UI tasks.
 * **Expert Auto Layout Application:** Designing a robust, pixel-perfect, and fully responsive UI by meticulously configuring a comprehensive set of Auto Layout constraints for optimal display on any iPhone device.
-* **Rapid Prototyping & Iteration:** Illustrating the capability
+* **Rapid Prototyping & Iteration:** Illustrating the capability to quickly bring functional, visually appealing application prototypes to life using only Xcode's integrated development environment.
+
+---
+
+## ⚙️ Getting Started
+
+To explore this project:
+
+1.  Clone the repository: `git clone https://github.com/RaulHMV/UIKit-Storyboards-birds-showcase-app.git`
+2.  Open the `.xcodeproj` file located in the project folder within Xcode.
+3.  Select any iPhone simulator (from iPhone SE to iPhone 17 Pro Max) and run the application (▶).
+
+---
+
+## 👤 Contact
+
+**RaulHMV** *Connect with me:* [Victor M. | LinkedIn](https://www.linkedin.com/in/victor-m-701a631b5/)
